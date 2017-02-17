@@ -17,19 +17,22 @@
 
 .wrapper {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem;
   border: .1rem solid black;
-  flex-basis: calc(100% / 5);
+  flex-basis: calc(100% / 4);
   flex-direction: column;
   display: flex;
+  position: absolute;
+  height: 100vh;
 }
 
 .logo {
-  justify-content: center;
+  margin: 0;
+  padding: 0;
 
 &__pic {
   width: 10rem;
-  height: 7rem;
+  height: 4rem;
   justify-content: center;
 }
 }
