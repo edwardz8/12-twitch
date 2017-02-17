@@ -26,11 +26,10 @@ export default function createGameItem(game) {
 
   gameItem.appendChild(gameItemPic);
 
+  gameItemPic.src = game.box.large;
 
-
-
+  gameItemPic.alt = game.name;
 
   return gameItem;
-
 
 }
