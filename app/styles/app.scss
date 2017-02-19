@@ -6,6 +6,11 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'box-sizing';
 //@import 'reset';
 
+
+* {
+  font-family: arial;
+}
+
 .section {
   padding: 2rem;
 }
@@ -121,4 +126,35 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     transform: translateY(10%);
     max-width: 15rem;
     }
+  }
+
+
+
+  //Recommended Channels
+
+  .rc {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+  .rc-btn {
+  background: rgba(black, 1);
+  border: none;
+  border-bottom: .1rem solid #acacac;
+  }
+  .rc-btn__text {
+    color: white;
+    font-size: .9rem;
+    line-height: 2rem;
+    background: rgba(black, 1);
+  }
+
+  .rc-icon {
+    width: 2rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+  }
+  .rc-icon__two {
+    width: 2rem;
+    border-radius: 50%;
   }
