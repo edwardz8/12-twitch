@@ -21,8 +21,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   flex-basis: calc(100% / 4);
   position: absolute;
   height: 100vh;
-  background: #49365c;
-  //background: rbga(128,0,128,0.8);
+  background: rgba(black, 1);
+  overflow: auto;
 }
 
 .logo {
@@ -33,7 +33,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 &__pic {
   width: 10rem;
   height: 4rem;
-  justify-content: center;
 }
 }
 
@@ -43,15 +42,16 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 
 &__bar {
-      width: 12rem;
-      padding: 8px 16px;
+      width: 15rem;
+      padding: 10px 16px;
       background:rgba(50, 50, 50, 0.2);
-      border: 0.1px solid black;
+      border: 0.1px solid #49365c;
+      font-size: 0.8rem;
 }
 &__icon {
       width: 1rem;
       height: 2.5rem;
-      color: white;
+      color: #5c3782;
 }
 }
 
@@ -59,6 +59,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       display: flex;
       flex-direction: column;
       padding: 2rem 0;
+      overflow: auto;
 
   .btn {
     width: 20rem;
@@ -68,11 +69,11 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     font-size: 1rem;
     border: none;
     color: white;
-    background: #49365c;
+    background: rgba(black, 1);
 
     &:hover {
       background: rgba(255, 255, 255, 0.4);
-      border: 0.1rem black solid;
+      border-left: 0.5rem #5c3782 solid;
     }
   }
 
@@ -85,4 +86,28 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   .fwp {
     display: flex;
     flex-direction: column;
+    border-bottom: .1rem solid #acacac;
+    margin: 0.5rem;
+    overflow: auto;
+    }
+
+  .fwp-btn__text {
+  color: white;
+  font-size: 1rem;
+  line-height: 3rem;
+  background: rgba(black, 1);
+  float: left;
+  }
+
+  .fwp-btn__icon {
+    font-size: 1.5rem;
+    color: white;
+    background: rgba(black, 1);
+    float: right;
+    padding-top: .7rem;
+  }
+
+  .fwp-btn {
+    background: rgba(black, 1);
+    border: none;
   }
