@@ -19,9 +19,10 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   margin: 0 auto;
   border: .1rem solid black;
   flex-basis: calc(100% / 4);
-  //flex-direction: column;
   position: absolute;
   height: 100vh;
+  background: #49365c;
+  //background: rbga(128,0,128,0.8);
 }
 
 .logo {
@@ -37,19 +38,21 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 }
 
 .search {
-      display: flex;
-      padding-top: 2.5rem;
-      line-height: 3rem;
-      justify-content: center;
+      padding-top: 2rem;
+      text-align: center;
+      align-items: center;
 
 
 &__bar {
-        line-height: 3rem;
+      width: 12rem;
+      padding: 8px 16px;
+      background:rgba(50, 50, 50, 0.2);
+      border: 0.1px solid black;
 }
 &__icon {
       width: 1rem;
       height: 3rem;
-
+      color: white;
 }
 }
 
@@ -57,7 +60,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       display: flex;
       flex-direction: column;
       padding: 2rem 0;
-      flex-grow: 1;
 
   .btn {
     width: 20rem;
@@ -67,7 +69,12 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     font-size: 1rem;
     border: none;
     color: white;
+    background: #49365c;
 
+    &:hover {
+      background: rgba(255, 255, 255, 0.4);
+      border: 0.1rem black solid;
+    }
   }
 
     .btn-icon {
@@ -75,3 +82,23 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       color: white;
     }
   }
+
+  .fwp {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    margin: 0;
+
+  &-button {
+    display: flex;
+    font-size: 2rem;
+    border-bottom: .5rem solid green;
+    justify-content: space-between;
+  }
+
+  &-buton__text {
+    font-size: 2rem;
+  }
+
+  &-btn__icon {}
+}
