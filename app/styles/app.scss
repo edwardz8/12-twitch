@@ -54,9 +54,9 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       font-size: 0.8rem;
 }
 &__icon {
-      width: 1rem;
-      height: 2.5rem;
-      color: #5c3782;
+      width: 1.5rem;
+      height: 2rem;
+      color: #d0d1cf;
 }
 }
 
@@ -70,7 +70,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     line-height: 2rem;
     margin: .1rem 0;
     text-align: left;
-    font-size: .8rem;
+    font-size: 1rem;
     border: none;
     color: white;
     background: rgba(black, 1);
@@ -92,7 +92,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     flex-direction: column;
     border-bottom: .1rem solid #acacac;
     margin: 0.5rem;
-    //position: absolute;
+    position: relative;
     }
 
   .fwp-btn__text {
@@ -117,18 +117,18 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   }
 
   .image {
-    max-width: 15rem;
-    display: none;
-    transform: translateY(10%);
-    bottom: 10%;
+    max-width: 16rem;
+    //display: none;
+    transform: translateY(0%);
+    bottom: 0%;
+    left: 8%;
+    position: absolute;
 
   .image:hover {
-    transform: translateY(10%);
-    max-width: 15rem;
+    transform: translateY(0%);
+    max-width: 16rem;
     }
   }
-
-
 
   //Recommended Channels
 
@@ -149,12 +149,42 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     background: rgba(black, 1);
   }
 
-  .rc-icon {
-    width: 2rem;
+  .rc-img {
+    display: flex;
+    width: 2.5rem;
     border-radius: 50%;
-    margin-bottom: .5rem;
+    margin: .5rem;
   }
-  .rc-icon__two {
-    width: 2rem;
+
+  .rc-img__two {
+    width: 2.5rem;
     border-radius: 50%;
+    margin: .5rem;
+  }
+
+
+  .bottom-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+
+    &__left {
+      padding: 1.2rem;
+      height: 3rem;
+      width: 7rem;
+      background: #5c3782;
+      border: none;
+      color: white;
+      font-size: .8rem;
+    }
+
+    &__right {
+      padding: 1.2rem;
+      height: 3rem;
+      width: 7rem;
+      background: #5c3782;
+      border: none;
+      color: white;
+      font-size: .8rem;
+    }
   }
