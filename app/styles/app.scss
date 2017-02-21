@@ -7,3 +7,11 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'reset';
 @import 'sidebar';
 @import 'grid';
+
+.game-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  flex-grow: 1;
+  max-width: 12rem;
+}
