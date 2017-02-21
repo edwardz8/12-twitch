@@ -1,12 +1,12 @@
 import createGameElement from './create-game-element';
 
-export default addGamesToList(parentEl, data) {
+export default function addGamesToList(parentEl, data) {
   parentEl.innerHTML = '';
 
-for (var i = 0; i < data.length; i+= 1) {
-  const gameItem = data[i];
-  const el = createGameElement(gameItem.game);
+  for (var i = 0; i < data.length; i+= 1) {
+    const gameItem = data[i];
+    const el = createGameElement(gameItem.game);
 
-  parentEl.appendChild(el);
-}
+    parentEl.appendChild(el);
+  }
 }
