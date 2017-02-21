@@ -1,0 +1,174 @@
+
+* {
+  font-family: arial;
+}
+
+.wrapper {
+  margin: 0;
+  padding-left: 0;
+  border: .1rem solid black;
+  position: absolute;
+  height: 100vh;
+  background: #18001a;
+  overflow: auto;
+  display: none;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+&__pic {
+  width: 8rem;
+  height: 3rem;
+}
+}
+
+.search {
+      padding-top: 2rem;
+      text-align: center;
+
+
+&__bar {
+      width: 14rem;
+      padding: 8px 14px;
+      background:rgba(50, 50, 50, 0.2);
+      border: 0.1px solid #5c3782;
+      font-size: 0.8rem;
+}
+&__icon {
+      width: 1.5rem;
+      height: 2rem;
+      color: #d0d1cf;
+}
+}
+
+.links {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+  .btn {
+    width: 18rem;
+    line-height: 2rem;
+    margin: .1rem 0;
+    text-align: left;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    background: #18001a;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.4);
+      border-left: 0.5rem #5c3782 solid;
+    }
+  }
+
+    .btn-icon {
+      margin: .8rem;
+      color: white;
+    }
+  }
+
+  .fwp {
+    display: flex;
+    flex-direction: column;
+    border-bottom: .1rem solid #acacac;
+    margin: 0.5rem;
+    position: relative;
+    }
+
+  .fwp-btn__text {
+  color: white;
+  font-size: .9rem;
+  line-height: 2rem;
+  background: #18001a;
+  float: left;
+  }
+
+  .fwp-btn__icon {
+    font-size: 1.5rem;
+    color: white;
+    background: #18001a;
+    float: right;
+    padding-top: .2rem;
+  }
+
+  .fwp-btn {
+    background: #18001a;
+    border: none;
+  }
+
+  .image {
+    max-width: 16rem;
+    display: none;
+    transform: translateY(0%);
+    bottom: 0%;
+    left: 8%;
+    position: absolute;
+
+  .image:hover {
+    transform: translateY(0%);
+    max-width: 16rem;
+    }
+  }
+
+  //Recommended Channels
+
+  .rc {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+  .rc-btn {
+  background: #18001a;
+  border: none;
+  border-bottom: .1rem solid #acacac;
+  }
+  .rc-btn__text {
+    color: white;
+    font-size: .9rem;
+    line-height: 2rem;
+    background: #18001a;
+  }
+
+  .rc-img {
+    display: flex;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin: .5rem;
+  }
+
+  .rc-img__two {
+    width: 2.5rem;
+    border-radius: 50%;
+    margin: .5rem;
+  }
+
+
+  .bottom-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+
+    &__left {
+      padding: 1.2rem;
+      height: 3rem;
+      width: 7rem;
+      background: #5c3782;
+      border: none;
+      color: white;
+      font-size: .8rem;
+    }
+
+    &__right {
+      padding: 1.2rem;
+      height: 3rem;
+      width: 7rem;
+      background: #5c3782;
+      border: none;
+      color: white;
+      font-size: .8rem;
+    }
+  }
