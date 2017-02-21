@@ -6,19 +6,20 @@
 
 .container {
   max-width: 70rem;
-  margin: 0;
+  min-width: 10rem;
+  margin-left: 20rem;
 }
 
 .game-section {
   margin: 0;
-  width: 100%;
 }
 
 .all-games {
-  color: #250e34;
+  color: #403449;
   padding-top: 2rem;
   padding-left: 2rem;
   margin: 0;
+  font-weight: lighter;
 }
 
 .grid {

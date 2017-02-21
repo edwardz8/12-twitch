@@ -4,14 +4,14 @@
 }
 
 .wrapper {
-  margin: 0;
-  padding-left: 0;
+  margin-left: 0;
+  padding: 0;
   border: .1rem solid black;
   position: absolute;
   height: 100vh;
   background: #18001a;
-  overflow: auto;
-  display: none;
+  //overflow: auto;
+  //display: none;
 }
 
 .logo {
@@ -101,7 +101,7 @@
   }
 
   .image {
-    max-width: 16rem;
+    max-width: 14rem;
     display: none;
     transform: translateY(0%);
     bottom: 0%;
